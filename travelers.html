@@ -276,8 +276,8 @@ button:hover{filter:brightness(1.08)}
 <script>
 // ====== 設定（ここだけ編集すればOK） ======
 const CONFIG = {
-  promoCode: '[CODE]',   // 10%割引コード
-  waUrl: '#'             // WhatsAppサポートURL（例: https://wa.me/62xxxxxxxxxx）
+  promoCode: 'EZAPP10',   // 10%割引コード
+  waUrl: 'https://wa.me/6282227196824'             // WhatsAppサポートURL（例: https://wa.me/62xxxxxxxxxx）
 };
 // ==========================================
 const T = {
@@ -382,8 +382,7 @@ function copyCode() {
 document.addEventListener('DOMContentLoaded', () => {
   try {
     const q = new URLSearchParams(location.search).get('lang');
-    const l = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
-    if (q === 'en' || q === 'id') lang = q; else if (l.indexOf('en') === 0) lang = 'en';
+    if (q === 'en' || q === 'id') lang = q;
   } catch (e) {}
   $('#promo-code').textContent = CONFIG.promoCode;
   $('#wa-link').setAttribute('href', CONFIG.waUrl);
