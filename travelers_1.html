@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0B2766">
+<title>ez Mobile App - Travelers</title>
+<meta name="description" content="Kelola eSIM ez Anda lebih mudah lewat aplikasi ez Mobile.">
+<link rel="icon" href="logo-color.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:inherit;text-decoration:none}
+a:hover{filter:brightness(1.08)}
+button{font-family:inherit;cursor:pointer}
+button:hover{filter:brightness(1.08)}
+.st-wrap{container:stw / inline-size}
+.st-grid{display:block}
+.st-sticky{display:none}
+.st-list{display:flex;flex-direction:column;gap:20px}
+.st-inline{display:block;margin-top:20px}
+@container stw (min-width: 860px){
+.st-grid{display:grid;grid-template-columns:300px 1fr;gap:64px;align-items:center}
+.st-sticky{display:block}
+.st-inline{display:none}
+.st-list{gap:10px}
+.st-item{padding:14px 20px !important}
+.st-item[data-active="0"]{opacity:.7}
+.st-item[data-active="0"]:hover{opacity:1}
+.st-item[data-active="0"] p{display:none}
+.st-item[data-active="0"] .st-head{margin-bottom:0 !important}
+.st-item .st-badge{width:36px !important;height:36px !important;font-size:17px !important}
+}
+</style>
+</head>
+<body>
+
+<div style="width:100%;background:#FFFFFF;color:#0B2766;font-family:Montserrat,system-ui,sans-serif;line-height:1.5">
+
+<!-- HERO -->
+<section style="position:relative;overflow:hidden;background:linear-gradient(135deg,#0B2766 0%,#1B47C4 55%,#2F63E0 100%);color:#FFFFFF">
+<div style="position:absolute;top:0;right:0;bottom:0;left:0;background-image:radial-gradient(#FFFFFF 1px,transparent 1px);background-size:28px 28px;opacity:0.10;pointer-events:none"></div>
+<div style="position:relative;max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:24px 0">
+<img src="logo-white.png" alt="ez" style="height:44px;width:auto;display:block">
+<div style="display:flex;align-items:center;gap:10px">
+<div role="group" aria-label="Language" style="display:flex;border:2px solid #FFFFFF;border-radius:999px;overflow:hidden">
+<button id="btn-id" data-lang="id" aria-pressed="true" style="min-height:40px;padding:0 14px;border:0;font-weight:700;font-size:13px;background:#FFFFFF;color:#0B2766">ID</button>
+<button id="btn-en" data-lang="en" aria-pressed="false" style="min-height:40px;padding:0 14px;border:0;font-weight:700;font-size:13px;background:transparent;color:#FFFFFF">EN</button>
+</div>
+
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:48px;padding:40px 0 96px">
+<div style="flex:1 1 460px;min-width:0">
+
+<h1 style="margin:20px 0 16px;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(32px,5vw,52px);line-height:1.15"><span data-k="heroTitle">Untuk traveler ez: kelola eSIM Anda lebih mudah lewat aplikasi.</span></h1>
+<p style="margin:0 0 28px;font-size:18px;color:#DCE6FF"><span data-k="heroBody">Cek sisa data, daftarkan eSIM yang sudah Anda beli, dan beli lagi, semua di satu aplikasi tanpa pindah ke website.</span></p>
+<a href="https://play.google.com/store/apps/details?id=com.globalez.ezmobile&amp;hl=id" target="_blank" rel="noopener" aria-label="Download di Google Play" data-ka-aria-label="cta" style="display:inline-block;line-height:0"><img src="google-play-badge.png" alt="Download di Google Play" data-ka-alt="cta" style="height:64px;width:auto;display:block"></a>
+<p style="margin:20px 0 0;font-size:13px;color:#C7D6FB;max-width:460px"><span data-k="iphone">Pengguna iPhone: aplikasi segera hadir di App Store. Sementara itu, silakan beli lewat website.</span></p>
+</div>
+<div style="flex:1 1 300px;display:flex;justify-content:center" aria-hidden="true">
+<div style="position:relative;width:280px;height:540px">
+<div style="position:absolute;left:-14px;top:70px;z-index:2;width:54px;height:54px;border-radius:999px;background:#0B2766;border:3px solid #FFFFFF;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px">4G</div>
+<div style="position:absolute;right:-14px;top:30px;z-index:2;width:62px;height:62px;border-radius:999px;background:#0B2766;border:3px solid #FFFFFF;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px">5G</div>
+<div style="width:280px;height:540px;border-radius:40px;background:#07163F;padding:10px;box-sizing:border-box;box-shadow:0 30px 60px rgba(0,0,0,0.35)">
+<div style="width:100%;height:100%;border-radius:30px;overflow:hidden;background:#F3F6FC"><img src="app-06-detail.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT IS -->
+
+
+<!-- DOWNLOAD NOW -->
+<section style="padding:96px 0;background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="text-align:center;max-width:680px;margin:0 auto 48px">
+<h2 style="margin:0 0 16px;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(26px,3.5vw,38px);line-height:1.2"><span data-k="whatTitle">Apa itu aplikasi ez Mobile?</span></h2>
+<p style="margin:0;font-size:17px;color:#3F5483"><span data-k="whatIntro">Satu aplikasi untuk semua kebutuhan eSIM ez Anda, dari cek data sampai beli lagi.</span></p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+<div style="flex:1 1 280px;min-width:0;padding:28px;border-radius:24px;background:#F3F6FC;border:1px solid #D5E1FB">
+<div style="width:52px;height:52px;border-radius:999px;background:#1E4FD0;display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18a8 8 0 1 1 16 0"></path><path d="M12 18l4-6"></path></svg>
+</div>
+<h3 style="margin:0 0 10px;font-size:18px;font-weight:700"><span data-k="c1t">Cek data kapan saja</span></h3>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="c1b">Lihat sisa data eSIM Anda langsung di aplikasi.</span></p>
+</div>
+<div style="flex:1 1 280px;min-width:0;padding:28px;border-radius:24px;background:#F3F6FC;border:1px solid #D5E1FB">
+<div style="width:52px;height:52px;border-radius:999px;background:#1E4FD0;display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"></path><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>
+</div>
+<h3 style="margin:0 0 10px;font-size:18px;font-weight:700"><span data-k="c2t">eSIM yang sudah dibeli ikut masuk</span></h3>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="c2b">Daftarkan eSIM yang sudah Anda beli, dan datanya langsung muncul di aplikasi.</span></p>
+</div>
+<div style="flex:1 1 280px;min-width:0;padding:28px;border-radius:24px;background:#F3F6FC;border:1px solid #D5E1FB">
+<div style="width:52px;height:52px;border-radius:999px;background:#1E4FD0;display:flex;align-items:center;justify-content:center;margin-bottom:20px">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8M8 12h8"></path></svg>
+</div>
+<h3 style="margin:0 0 10px;font-size:18px;font-weight:700"><span data-k="c3t">Beli dan top up di aplikasi</span></h3>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="c3b">Semua selesai di satu tempat, tanpa pindah ke website.</span></p>
+</div>
+</div>
+</div>
+</section><section id="download" style="padding:0 0 96px;background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px;padding:48px;border-radius:32px;background:linear-gradient(135deg,#0B2766 0%,#1B47C4 60%,#2F63E0 100%);color:#FFFFFF">
+<div style="flex:1 1 320px;min-width:0">
+<h2 style="margin:0 0 8px;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(26px,3.5vw,36px);line-height:1.2"><span data-k="dlTitle">Download sekarang</span></h2>
+<p style="margin:0;font-size:16px;color:#DCE6FF"><span data-k="dlSub">Gratis di Google Play</span></p>
+</div>
+<a href="https://play.google.com/store/apps/details?id=com.globalez.ezmobile&amp;hl=id" target="_blank" rel="noopener" aria-label="Download di Google Play" data-ka-aria-label="cta" style="display:inline-block;line-height:0"><img src="google-play-badge.png" alt="Download di Google Play" data-ka-alt="cta" style="height:64px;width:auto;display:block"></a>
+</div>
+</div>
+</section>
+
+<!-- STEPS -->
+<section class="st-wrap" style="padding:96px 0;background:#F3F6FC">
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="text-align:center;max-width:680px;margin:0 auto 48px">
+<h2 style="margin:0;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(26px,3.5vw,38px);line-height:1.2"><span data-k="stepsTitle">Cara pakai, langkah demi langkah</span></h2>
+</div>
+<div class="st-grid">
+<div class="st-sticky">
+<div style="position:relative;width:300px;height:588px;border-radius:44px;background:#07163F;padding:10px;box-sizing:border-box;box-shadow:0 30px 60px rgba(11,39,102,0.30);margin:0 auto">
+<div style="position:relative;width:100%;height:100%;border-radius:34px;overflow:hidden;background:#F3F6FC">
+<img src="app-01-home.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:1;transition:opacity .35s">
+<img src="app-02-my-esims.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+<img src="app-03-signin.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+<img src="app-04-iccid.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+<img src="app-05-list.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+<img src="app-06-detail.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+<img src="app-07-cart.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;opacity:0;transition:opacity .35s">
+</div>
+</div>
+<p style="margin:20px auto 0;max-width:300px;text-align:center;font-weight:700;font-size:15px;color:#1E4FD0"><span id="cur-num">1</span> / 7 · <span id="cur-title">Download dan buka aplikasi</span></p>
+</div>
+<div class="st-list">
+<div class="st-item" data-n="1" data-active="1" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #1E4FD0;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#1E4FD0;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">1</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p1t">Download dan buka aplikasi</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p1b">Install ez Mobile dari Google Play, lalu buka aplikasinya. Beranda langsung menampilkan daftar negara dan harga.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-01-home.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="2" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">2</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p2t">Buka menu My eSIMs</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p2b">Ketuk My eSIMs di bagian bawah, lalu ketuk tombol Claim SIM Data di kanan atas.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-02-my-esims.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="3" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">3</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p3t">Masuk atau daftar</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p3b">Anda akan diminta masuk. Pilih Sign In / Register untuk membuka atau membuat akun.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-03-signin.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="4" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">4</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p4t">Masukkan nomor ICCID</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p4b">Buka email pembelian, salin nomor ICCID (19 sampai 20 digit), tempel di kolom, lalu ketuk Claim SIM Data.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-04-iccid.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="5" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">5</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p5t">eSIM Anda muncul di daftar</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p5b">eSIM yang sudah Anda beli langsung tampil, lengkap dengan statusnya: Active, Not Yet Active, atau Expired.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-05-list.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="6" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">6</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p6t">Cek sisa data dan masa berlaku</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p6b">Lihat sisa data, tanggal kedaluwarsa, dan kode QR untuk install. Data diperbarui dengan jeda sekitar 1 jam.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-06-detail.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+<div class="st-item" data-n="7" data-active="0" tabindex="0" role="button" style="padding:24px 28px;border-radius:24px;background:#FFFFFF;border:2px solid #D5E1FB;cursor:pointer;transition:opacity .3s,border-color .3s">
+<div class="st-head" style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+<div class="st-badge" style="flex:none;width:44px;height:44px;border-radius:999px;background:#8FA5D6;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Comfortaa,sans-serif;font-weight:700;font-size:20px">7</div>
+<h3 style="margin:0;font-size:18px;font-weight:700;line-height:1.3"><span data-k="p7t">Top up dengan kode diskon 10%</span></h3>
+</div>
+<p style="margin:0;font-size:15px;color:#3F5483"><span data-k="p7b">Ketuk Top-up Data, lalu masukkan kode Anda di kolom Coupons or Gift Voucher sebelum Checkout.</span></p>
+<div class="st-inline"><div style="width:220px;height:446px;border-radius:32px;background:#07163F;padding:8px;box-sizing:border-box;box-shadow:0 16px 32px rgba(11,39,102,0.25);margin:0 auto"><div style="width:100%;height:100%;border-radius:25px;overflow:hidden;background:#F3F6FC"><img src="app-07-cart.jpg" alt="" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROMO CODE -->
+<section style="padding:96px 0;background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="padding:48px 32px;border-radius:32px;background:#E6EEFF;border:1px solid #C9D8FB;text-align:center">
+<h2 style="margin:0 0 28px;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(24px,3.2vw,34px);line-height:1.25"><span data-k="promoTitle">Diskon 10% untuk pembelian berikutnya di aplikasi</span></h2>
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px">
+<div style="padding: 14px 28px; border: 2px dashed #DE2137; border-radius: 16px; background: #FFFFFF; font-weight: 700; font-size: 28px; letter-spacing: 0.08em; user-select: all; color: #e70423"><span id="promo-code">[CODE]</span></div>
+<button id="copy-btn" style="min-height:56px;padding:0 28px;border:0;border-radius:999px;background:#1E4FD0;color:#FFFFFF;font-weight:700;font-size:16px"><span id="copy-label">Salin kode</span></button>
+</div>
+<div id="copy-hint" style="display:none">
+<p style="margin:14px 0 0;font-size:13px;color:#4B5E86"><span data-k="copyHint">Tekan lama kode di atas untuk menyalin.</span></p>
+</div>
+<p style="margin:24px auto 0;max-width:560px;font-size:15px;color:#3F5483"><span data-k="promoNote">Salin kode, lalu masukkan di aplikasi saat Anda membeli. Berlaku sampai 30 November 2026.</span></p>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:0 0 96px;background:#FFFFFF">
+<div style="max-width:800px;margin:0 auto;padding:0 24px;box-sizing:border-box">
+<div style="text-align:center;margin-bottom:32px">
+<h2 style="margin:0;font-family:Comfortaa,Montserrat,sans-serif;font-weight:700;font-size:clamp(24px,3.2vw,34px);line-height:1.2"><span data-k="faqTitle">Pertanyaan umum</span></h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="border:1px solid #D5E1FB;border-radius:20px;background:#FFFFFF;overflow:hidden">
+<button data-faq-btn="1" aria-expanded="true" style="width:100%;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;border:0;background:transparent;color:#0B2766;text-align:left;font-size:16px;font-weight:600">
+<span><span data-k="q1">Di mana saya menemukan nomor ICCID?</span></span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E4FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform .2s;transform:rotate(180deg)" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div data-faq-a="1" style="display:block">
+<div style="padding:0 24px 20px;font-size:15px;color:#3F5483"><span data-k="a1">Nomor ICCID ada di email pembelian eSIM Anda.</span></div>
+</div>
+</div>
+<div style="border:1px solid #D5E1FB;border-radius:20px;background:#FFFFFF;overflow:hidden">
+<button data-faq-btn="2" aria-expanded="false" style="width:100%;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;border:0;background:transparent;color:#0B2766;text-align:left;font-size:16px;font-weight:600">
+<span><span data-k="q2">Apakah eSIM yang sudah saya beli bisa didaftarkan di aplikasi?</span></span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E4FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform .2s;transform:rotate(0deg)" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div data-faq-a="2" style="display:none">
+<div style="padding:0 24px 20px;font-size:15px;color:#3F5483"><span data-k="a2">Bisa. Masukkan nomor ICCID dari email pembelian, dan data eSIM Anda akan langsung tampil.</span></div>
+</div>
+</div>
+<div style="border:1px solid #D5E1FB;border-radius:20px;background:#FFFFFF;overflow:hidden">
+<button data-faq-btn="3" aria-expanded="false" style="width:100%;min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 24px;border:0;background:transparent;color:#0B2766;text-align:left;font-size:16px;font-weight:600">
+<span><span data-k="q3">Saya pakai iPhone. Bagaimana cara membeli?</span></span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E4FD0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;transition:transform .2s;transform:rotate(0deg)" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<div data-faq-a="3" style="display:none">
+<div style="padding:0 24px 20px;font-size:15px;color:#3F5483"><span data-k="a3">Aplikasi untuk iPhone sedang dalam proses di App Store. Untuk sementara, silakan beli lewat website ez.</span></div>
+</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:32px">
+<p style="margin:0 0 14px;font-size:15px;color:#3F5483"><span data-k="help">Butuh bantuan?</span></p>
+<a id="wa-link" target="_blank" rel="noopener" href="#" style="display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 28px;border:0;border-radius:999px;background:#25D366;font-weight:700;font-size:15px;color:#063B1F"><span data-k="wa">Chat via WhatsApp</span></a>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#F3F6FC;padding:40px 0">
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+<img src="logo-color.png" alt="ez" style="height:40px;width:auto;display:block">
+<div style="font-size:13px;color:#4B5E86;text-align:right">PT Maya Netra Indonesia · global-ez.com<br>© 2026 ez. All rights reserved.</div>
+</div>
+</footer>
+
+</div>
+
+<script>
+// ====== 設定（ここだけ編集すればOK） ======
+const CONFIG = {
+  promoCode: '[CODE]',   // 10%割引コード
+  waUrl: '#'             // WhatsAppサポートURL（例: https://wa.me/62xxxxxxxxxx）
+};
+// ==========================================
+const T = {
+  id: {
+    chip: 'Kini tersedia di Google Play',
+    heroTitle: 'Untuk traveler ez: kelola eSIM Anda lebih mudah lewat aplikasi.',
+    heroBody: 'Cek sisa data, daftarkan eSIM yang sudah Anda beli, dan beli lagi, semua di satu aplikasi tanpa pindah ke website.',
+    cta: 'Download di Google Play',
+    iphone: 'Pengguna iPhone: aplikasi segera hadir di App Store. Sementara itu, silakan beli lewat website.',
+    mockSearch: 'Cari negara atau wilayah', mockActive: 'eSIM aktif', mockName: 'eSIM Anda', mockData: 'Sisa data', mockTopup: 'Top up', mockBuy: 'Beli eSIM', mockAdd: 'Daftarkan eSIM yang sudah dibeli',
+    whatTitle: 'Apa itu aplikasi ez Mobile?',
+    whatIntro: 'Satu aplikasi untuk semua kebutuhan eSIM ez Anda, dari cek data sampai beli lagi.',
+    c1t: 'Cek data kapan saja', c1b: 'Lihat sisa data eSIM Anda langsung di aplikasi.',
+    c2t: 'eSIM yang sudah dibeli ikut masuk', c2b: 'Daftarkan eSIM yang sudah Anda beli, dan datanya langsung muncul di aplikasi.',
+    c3t: 'Beli dan top up di aplikasi', c3b: 'Semua selesai di satu tempat, tanpa pindah ke website.',
+    dlTitle: 'Download sekarang', dlSub: 'Gratis di Google Play',
+    stepsTitle: 'Cara pakai, langkah demi langkah',
+    p1t: 'Download dan buka aplikasi', p1b: 'Install ez Mobile dari Google Play, lalu buka aplikasinya. Beranda langsung menampilkan daftar negara dan harga.',
+    p2t: 'Buka menu My eSIMs', p2b: 'Ketuk My eSIMs di bagian bawah, lalu ketuk tombol Claim SIM Data di kanan atas.',
+    p3t: 'Masuk atau daftar', p3b: 'Anda akan diminta masuk. Pilih Sign In / Register untuk membuka atau membuat akun.',
+    p4t: 'Masukkan nomor ICCID', p4b: 'Buka email pembelian, salin nomor ICCID (19 sampai 20 digit), tempel di kolom, lalu ketuk Claim SIM Data.',
+    p5t: 'eSIM Anda muncul di daftar', p5b: 'eSIM yang sudah Anda beli langsung tampil, lengkap dengan statusnya: Active, Not Yet Active, atau Expired.',
+    p6t: 'Cek sisa data dan masa berlaku', p6b: 'Lihat sisa data, tanggal kedaluwarsa, dan kode QR untuk install. Data diperbarui dengan jeda sekitar 1 jam.',
+    p7t: 'Top up dengan kode diskon 10%', p7b: 'Ketuk Top-up Data, lalu masukkan kode Anda di kolom Coupons or Gift Voucher sebelum Checkout.',
+    promoTitle: 'Diskon 10% untuk pembelian berikutnya di aplikasi',
+    promoNote: 'Salin kode, lalu masukkan di aplikasi saat Anda membeli. Berlaku sampai 30 November 2026.',
+    copy: 'Salin kode', copied: 'Tersalin', copyHint: 'Tekan lama kode di atas untuk menyalin.',
+    faqTitle: 'Pertanyaan umum',
+    q1: 'Di mana saya menemukan nomor ICCID?', a1: 'Nomor ICCID ada di email pembelian eSIM Anda.',
+    q2: 'Apakah eSIM yang sudah saya beli bisa didaftarkan di aplikasi?', a2: 'Bisa. Masukkan nomor ICCID dari email pembelian, dan data eSIM Anda akan langsung tampil.',
+    q3: 'Saya pakai iPhone. Bagaimana cara membeli?', a3: 'Aplikasi untuk iPhone sedang dalam proses di App Store. Untuk sementara, silakan beli lewat website ez.',
+    help: 'Butuh bantuan?', wa: 'Chat via WhatsApp'
+  },
+  en: {
+    chip: 'Now on Google Play',
+    heroTitle: 'For travelers: manage your eSIM more easily in the app.',
+    heroBody: 'Check your data, add the eSIM you already bought, and buy again, all in one app without going back to the website.',
+    cta: 'Get it on Google Play',
+    iphone: 'iPhone users: coming soon to the App Store. For now, please buy on our website.',
+    mockSearch: 'Search countries or regions', mockActive: 'Active eSIM', mockName: 'Your eSIM', mockData: 'Data left', mockTopup: 'Top up', mockBuy: 'Buy eSIM', mockAdd: 'Add the eSIM you bought',
+    whatTitle: 'What is the ez Mobile app?',
+    whatIntro: 'One app for everything about your ez eSIM, from checking data to buying again.',
+    c1t: 'Check your data anytime', c1b: 'See how much data your eSIM has left, right in the app.',
+    c2t: 'Your purchased eSIM shows up', c2b: 'Add the eSIM you already bought, and its data shows up in the app right away.',
+    c3t: 'Buy and top up in the app', c3b: 'Everything in one place, no need to go to the website.',
+    dlTitle: 'Download now', dlSub: 'Free on Google Play',
+    stepsTitle: 'How it works, step by step',
+    p1t: 'Download and open the app', p1b: 'Install ez Mobile from Google Play and open it. The home screen shows countries and prices right away.',
+    p2t: 'Open My eSIMs', p2b: 'Tap My eSIMs at the bottom, then tap Claim SIM Data at the top right.',
+    p3t: 'Sign in or register', p3b: 'You will be asked to sign in. Choose Sign In / Register to open or create your account.',
+    p4t: 'Enter your ICCID', p4b: 'Open your purchase email, copy the ICCID number (19 to 20 digits), paste it in the field, then tap Claim SIM Data.',
+    p5t: 'Your eSIM shows up in the list', p5b: 'The eSIM you already bought appears right away, with its status: Active, Not Yet Active or Expired.',
+    p6t: 'Check data and validity', p6b: 'See the data left, the expiry date and the QR code to install. Usage updates with about a 1-hour delay.',
+    p7t: 'Top up with your 10% code', p7b: 'Tap Top-up Data, then enter your code under Coupons or Gift Voucher before you check out.',
+    promoTitle: '10% off your next purchase in the app',
+    promoNote: 'Copy the code and enter it in the app when you buy. Valid until 30 November 2026.',
+    copy: 'Copy code', copied: 'Copied', copyHint: 'Long-press the code above to copy it.',
+    faqTitle: 'FAQ',
+    q1: 'Where do I find my ICCID number?', a1: 'Your ICCID number is in your eSIM purchase email.',
+    q2: 'Can I add an eSIM I already bought to the app?', a2: 'Yes. Enter the ICCID number from your purchase email and your eSIM data will show up right away.',
+    q3: 'I use an iPhone. How do I buy?', a3: 'The iPhone app is in progress on the App Store. For now, please buy on the ez website.',
+    help: 'Need help?', wa: 'Chat via WhatsApp'
+  }
+};
+
+let lang = 'id', step = 1, faq = 1, copied = false;
+const $ = (s, r) => (r || document).querySelector(s), $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+function applyLang() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  $$('[data-k]').forEach(el => { el.textContent = t[el.getAttribute('data-k')]; });
+  ['alt', 'aria-label'].forEach(a => $$('[data-ka-' + a + ']').forEach(el => el.setAttribute(a, t[el.getAttribute('data-ka-' + a)])));
+  const on = { background: '#FFFFFF', color: '#0B2766' }, off = { background: 'transparent', color: '#FFFFFF' };
+  ['id', 'en'].forEach(l => { const b = $('#btn-' + l); Object.assign(b.style, l === lang ? on : off); b.setAttribute('aria-pressed', String(l === lang)); });
+  $('#cur-title').textContent = t['p' + step + 't'];
+  $('#copy-label').textContent = copied ? t.copied : t.copy;
+}
+function setStep(n) {
+  step = n;
+  $$('.st-item').forEach(el => {
+    const k = +el.getAttribute('data-n'), a = k === n;
+    el.setAttribute('data-active', a ? '1' : '0');
+    el.style.borderColor = a ? '#1E4FD0' : '#D5E1FB';
+    $('.st-badge', el).style.background = a ? '#1E4FD0' : '#8FA5D6';
+  });
+  $$('.st-sticky img').forEach((im, i) => { im.style.opacity = i + 1 === n ? 1 : 0; });
+  $('#cur-num').textContent = n;
+  $('#cur-title').textContent = T[lang]['p' + n + 't'];
+}
+function setFaq(n) {
+  faq = faq === n ? 0 : n;
+  $$('[data-faq-btn]').forEach(b => { const k = +b.getAttribute('data-faq-btn'); b.setAttribute('aria-expanded', String(k === faq)); $('svg', b).style.transform = k === faq ? 'rotate(180deg)' : 'rotate(0deg)'; });
+  $$('[data-faq-a]').forEach(d => { d.style.display = +d.getAttribute('data-faq-a') === faq ? 'block' : 'none'; });
+}
+function copyCode() {
+  const done = ok => {
+    if (ok) { copied = true; applyLang(); setTimeout(() => { copied = false; applyLang(); }, 2000); }
+    else { $('#copy-hint').style.display = 'block'; }
+  };
+  try { navigator.clipboard.writeText(CONFIG.promoCode).then(() => done(true), () => done(false)); } catch (e) { done(false); }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (q === 'en' || q === 'id') lang = q;
+  } catch (e) {}
+  $('#promo-code').textContent = CONFIG.promoCode;
+  $('#wa-link').setAttribute('href', CONFIG.waUrl);
+  $$('[data-lang]').forEach(b => b.addEventListener('click', () => { lang = b.getAttribute('data-lang'); applyLang(); }));
+  $$('.st-item').forEach(el => {
+    const go = () => setStep(+el.getAttribute('data-n'));
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+  });
+  $$('[data-faq-btn]').forEach(b => b.addEventListener('click', () => setFaq(+b.getAttribute('data-faq-btn'))));
+  $('#copy-btn').addEventListener('click', copyCode);
+  applyLang();
+});
+</script>
+</body>
+</html>
